@@ -2,23 +2,20 @@ function openPopup(event) {
   var index = Array.from(document.querySelectorAll('.grid-item2')).indexOf(event.target);
   var dynamicdat = document.querySelectorAll('.grid-item2')[index].innerText;
   var temp = dynamicdat.split('\n');
-  var additionalData =    "Estimated Time:0.0\n"+
+  var additionalData =
+  "Variants Management : FALSE\n"+
   "Material Scrap:0.0\n" +
   "Sequencing Mode:Linear\n" +
   "Roll up      :TRUE\n" +
-  "Estimated time:0.0\n" +
+  "Estimated Time : 0.0\n"+
   "Value Added Ratio on  Estimated Time :1.0\n" +
   "Is Time Proportional  To Quantity : TRUE\n" +
-  "Measured Time:00\n";
-  function objectToTable(obj) {
+  "Measured Time:0.0\n";
+  function objectToTable(obj,temp) {
     var table = document.getElementById("data-table"); // Get the table element
     table.innerHTML = "";
-    var headerRow = table.insertRow();
-    var headerCell1 = headerRow.insertCell();
-    headerCell1.textContent=''
-    var headerCell2 = headerRow.insertCell();
-
-    headerCell2.textContent = "admin_platform 3/19/2024 \n"; 
+    document.getElementById('dynamicdata').innerText = 'admin_platform 3/19/2024 \n';
+    document.getElementById('heading').innerText=temp[0];
     for (var key in obj) {
       if (obj.hasOwnProperty(key)) {
         var dataRow = table.insertRow();
@@ -38,8 +35,7 @@ function openPopup(event) {
     dataObject[key] = value;
   });
     // Convert the object to an HTML table (call the function)
-  objectToTable(dataObject);
-  document.getElementById('dynamicdata').innerText = temp[0];
+  objectToTable(dataObject,temp);
   document.getElementById('popup').style.display = 'block';
 }
 function Print() {
