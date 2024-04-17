@@ -52,7 +52,7 @@ position: relative;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    height: 35rem;
+    height: 30rem;
     background-color: rgb(3, 76, 136);
     color: white;
 }
