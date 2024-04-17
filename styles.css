@@ -98,7 +98,7 @@ table {
 }
 th, td {
   border: 0.01rem solid #ddd;
-  padding: 8px; 
+  padding: 3px; 
   text-align: left; 
 }
 th {
@@ -109,4 +109,5 @@ th {
 }
 #heading{
   text-align: center;
+    font-weight:bold;
 }
