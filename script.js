@@ -15,7 +15,10 @@ function openPopup(event) {
     table.innerHTML = "";
     var headerRow = table.insertRow();
     var headerCell1 = headerRow.insertCell();
-    headerCell1.textContent = "admin_platform 3/19/2024 \n"; 
+    headerCell1.textContent=''
+    var headerCell2 = headerRow.insertCell();
+
+    headerCell2.textContent = "admin_platform 3/19/2024 \n"; 
     for (var key in obj) {
       if (obj.hasOwnProperty(key)) {
         var dataRow = table.insertRow();
