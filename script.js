@@ -14,8 +14,8 @@ function openPopup(event) {
   function objectToTable(obj,temp) {
     var table = document.getElementById("data-table"); // Get the table element
     table.innerHTML = "";
-    document.getElementById('dynamicdata').innerText = 'admin_platform 3/19/2024 \n';
     document.getElementById('heading').innerText=temp[0];
+    document.getElementById('dynamicdata').innerText = 'admin_platform 3/19/2024 \n';
     for (var key in obj) {
       if (obj.hasOwnProperty(key)) {
         var dataRow = table.insertRow();
