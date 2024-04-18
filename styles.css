@@ -9,7 +9,7 @@ position: sticky;
 .container 
 {
 display: grid;
-grid-template-columns: 10fr 10fr 1fr 10fr 1fr 10fr 10fr 10fr;
+grid-template-columns: 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr;
 background-color: #ffffff; 
 position: relative;
 }    
